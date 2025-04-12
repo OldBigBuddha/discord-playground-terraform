@@ -5,6 +5,6 @@ locals {
   
   // カテゴリーと対応するテキストチャンネルをマップとして定義
   category_config = {
-    lab = ["test", "remind"]
+    lab = ["remind"]
   }
 }
