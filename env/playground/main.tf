@@ -5,6 +5,13 @@ module "server"{
     server_resion = local.region
 }
 
+module "moderator" {
+    source = "../../modules/roles"
+
+    server_id = module.server.server_id
+    user_id = local.user_id
+}
+
 module "standalone_text_channel" {
     source = "../../modules/textchannel"
     
